@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Rockman",
+			"Path": "C:\\Users\\han\\Documents\\Unreal Projects\\Rockman\\Source\\Rockman.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "RockmanEditor",
+			"Path": "C:\\Users\\han\\Documents\\Unreal Projects\\Rockman\\Source\\RockmanEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

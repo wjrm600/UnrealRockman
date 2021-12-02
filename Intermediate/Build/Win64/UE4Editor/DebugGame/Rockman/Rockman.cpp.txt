@@ -1,0 +1,2 @@
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
+d:\rockman6.12 (2)\source\rockman\Rockman.h

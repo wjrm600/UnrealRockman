@@ -1,0 +1,22 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Rockman-9818.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RM_Projectile.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RM_ProjectileEgg.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Rockman.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RockmanCharacter.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RockmanGameMode.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RM_Projectile.gen.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RM_ProjectileEgg.gen.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Rockman.init.gen.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RockmanCharacter.gen.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\RockmanGameMode.gen.cpp.obj"
+"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Default.rc2.res"
+/OUT:"C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\UE4Editor-Rockman-9818.lib"
+/INCLUDE:IMPLEMENT_MODULE_Rockman

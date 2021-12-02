@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Rockman.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{6118FEF8-A76D-4DEC-AA76-98E715FF8126}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Rockman.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\RockmanEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{57894C82-A7E1-4ECE-87F0-C9E75EF5B374}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Rockman">
+      <UniqueIdentifier>{EED2D33B-E29B-4C62-B082-2249FBDAE89C}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Rockman\ProjectilePoolComponent.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Rockman\ProjectilePoolComponent.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
+    <None Include="..\..\Source\Rockman\Rockman.Build.cs">
+      <Filter>Source\Rockman</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Rockman\Rockman.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Rockman\Rockman.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Rockman\RockmanCharacter.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Rockman\RockmanCharacter.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Rockman\RockmanGameMode.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Rockman\RockmanGameMode.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Rockman\RM_Projectile.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Rockman\RM_Projectile.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

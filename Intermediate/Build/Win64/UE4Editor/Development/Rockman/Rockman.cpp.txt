@@ -1,0 +1,2 @@
+C:\Users\han\Documents\Unreal Projects\Rockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h
+c:\users\han\documents\unreal projects\rockman\source\rockman\Rockman.h
