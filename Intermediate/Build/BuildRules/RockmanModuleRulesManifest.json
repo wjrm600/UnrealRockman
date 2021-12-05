@@ -1,8 +1,8 @@
 {
 	"SourceFiles": [
-		"D:\\Rockman6.12 (2)\\Source\\Rockman\\Rockman.Build.cs",
-		"D:\\Rockman6.12 (2)\\Source\\Rockman.Target.cs",
-		"D:\\Rockman6.12 (2)\\Source\\RockmanEditor.Target.cs"
+		"C:\\Users\\han\\Desktop\\Rockman6.12\\Source\\Rockman\\Rockman.Build.cs",
+		"C:\\Users\\han\\Desktop\\Rockman6.12\\Source\\Rockman.Target.cs",
+		"C:\\Users\\han\\Desktop\\Rockman6.12\\Source\\RockmanEditor.Target.cs"
 	],
 	"EngineVersion": "4.26.2"
 }

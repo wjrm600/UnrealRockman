@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "Rockman",
-			"Path": "C:\\Users\\han\\Documents\\Unreal Projects\\Rockman\\Source\\Rockman.Target.cs",
+			"Path": "C:\\Users\\han\\Desktop\\Rockman6.12\\Source\\Rockman.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "RockmanEditor",
-			"Path": "C:\\Users\\han\\Documents\\Unreal Projects\\Rockman\\Source\\RockmanEditor.Target.cs",
+			"Path": "C:\\Users\\han\\Desktop\\Rockman6.12\\Source\\RockmanEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]
