@@ -10,6 +10,8 @@
 #include "RM_Projectile.h"
 #include "RockmanGameMode.h"
 #include "ProjectilePoolComponent.h"
+#include "InventoryComponent.h"
+#include "InventoryItem.h"
 
 void ARockmanCharacter::Tick(float DeltaTime)
 {
@@ -83,6 +85,9 @@ ARockmanCharacter::ARockmanCharacter()
 
 	static ConstructorHelpers::FClassFinder<AActor> BPClass(TEXT("Blueprint'/Game/Mouse/BP_bridge'"));
 	Bridge_BP_Class = BPClass.Class;
+
+	Inventory = CreateDefaultSubobject<UInventoryComponent>("Inventory");
+
 }
 
 
@@ -177,6 +182,9 @@ void ARockmanCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerI
 
 	PlayerInputComponent->BindTouch(IE_Pressed, this, &ARockmanCharacter::TouchStarted);
 	PlayerInputComponent->BindTouch(IE_Released, this, &ARockmanCharacter::TouchStopped);
+
+	//Inventory Category Input bindings
+	PlayerInputComponent->BindAction("DropItem", IE_Pressed, this, &ARockmanCharacter::DropItem);
 }
 
 void ARockmanCharacter::MoveRight(float Value)
@@ -221,3 +229,25 @@ void ARockmanCharacter::TouchStopped(const ETouchIndex::Type FingerIndex, const 
 	StopJumping();
 }
 
+void ARockmanCharacter::DropItem()
+{
+	if (Inventory->CurrentInventory.Num() == 0)
+	{
+		return;
+	}
+
+	AInventoryItem* Item = Inventory->CurrentInventory.Last();
+	Inventory->RemoveFromInvectory(Item);
+	FVector ItemOrigin;
+	FVector ItemBounds;
+	Item->GetActorBounds(false, ItemOrigin, ItemBounds);
+	FTransform PutDownLocation = GetTransform() + FTransform(RootComponent->GetForwardVector() * ItemBounds.GetMax());
+	Item->PutDown(PutDownLocation);
+
+}
+
+void ARockmanCharacter::TakeItem(AInventoryItem* _item)
+{
+	_item->PickUp();
+	Inventory->AddToInventory(_item);
+}

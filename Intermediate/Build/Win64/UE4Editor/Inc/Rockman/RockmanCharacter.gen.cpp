@@ -19,11 +19,13 @@ void EmptyLinkFunctionForGeneratedCodeRockmanCharacter() {}
 	ROCKMAN_API UClass* Z_Construct_UClass_ARockmanCharacter_NoRegister();
 	ROCKMAN_API UClass* Z_Construct_UClass_ARockmanCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ROCKMAN_API UClass* Z_Construct_UClass_AInventoryItem_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ROCKMAN_API UClass* Z_Construct_UClass_UProjectilePoolComponent_NoRegister();
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UInventoryComponent_NoRegister();
 // End Cross Module References
 class UScriptStruct* FCommand::StaticStruct()
 {
@@ -220,6 +222,21 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		return ReturnStruct;
 	}
 	uint32 Get_Z_Construct_UScriptStruct_FInputInfo_Hash() { return 2782151357U; }
+	DEFINE_FUNCTION(ARockmanCharacter::execTakeItem)
+	{
+		P_GET_OBJECT(AInventoryItem,Z_Param__item);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->TakeItem(Z_Param__item);
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ARockmanCharacter::execDropItem)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->DropItem();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ARockmanCharacter::execStartCommand)
 	{
 		P_GET_PROPERTY(FStrProperty,Z_Param_commandname);
@@ -256,8 +273,10 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		static const FNameNativePtrPair Funcs[] = {
 			{ "AddInputToInputBuffer", &ARockmanCharacter::execAddInputToInputBuffer },
 			{ "CheckInputBufferForCommand", &ARockmanCharacter::execCheckInputBufferForCommand },
+			{ "DropItem", &ARockmanCharacter::execDropItem },
 			{ "RemoveInputFromInputBuffer", &ARockmanCharacter::execRemoveInputFromInputBuffer },
 			{ "StartCommand", &ARockmanCharacter::execStartCommand },
+			{ "TakeItem", &ARockmanCharacter::execTakeItem },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -317,6 +336,30 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics::Function_MetaDataParams[] = {
+		{ "Comment", "//Inventory Category\n" },
+		{ "ModuleRelativePath", "RockmanCharacter.h" },
+		{ "ToolTip", "Inventory Category" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARockmanCharacter, nullptr, "DropItem", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARockmanCharacter_DropItem()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ARockmanCharacter_DropItem_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ARockmanCharacter_RemoveInputFromInputBuffer_Statics
 	{
 #if WITH_METADATA
@@ -371,6 +414,38 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics
+	{
+		struct RockmanCharacter_eventTakeItem_Parms
+		{
+			AInventoryItem* _item;
+		};
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp__item;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::NewProp__item = { "_item", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(RockmanCharacter_eventTakeItem_Parms, _item), Z_Construct_UClass_AInventoryItem_NoRegister, METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::NewProp__item,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "RockmanCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ARockmanCharacter, nullptr, "TakeItem", nullptr, nullptr, sizeof(RockmanCharacter_eventTakeItem_Parms), Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ARockmanCharacter_TakeItem()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ARockmanCharacter_TakeItem_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	UClass* Z_Construct_UClass_ARockmanCharacter_NoRegister()
 	{
 		return ARockmanCharacter::StaticClass();
@@ -398,6 +473,10 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Bridge_BP_Class_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Bridge_BP_Class;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Inventory_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_Inventory;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharName_MetaData[];
 #endif
@@ -432,8 +511,10 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 	const FClassFunctionLinkInfo Z_Construct_UClass_ARockmanCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ARockmanCharacter_AddInputToInputBuffer, "AddInputToInputBuffer" }, // 2060182212
 		{ &Z_Construct_UFunction_ARockmanCharacter_CheckInputBufferForCommand, "CheckInputBufferForCommand" }, // 511677032
+		{ &Z_Construct_UFunction_ARockmanCharacter_DropItem, "DropItem" }, // 1349625029
 		{ &Z_Construct_UFunction_ARockmanCharacter_RemoveInputFromInputBuffer, "RemoveInputFromInputBuffer" }, // 1903073511
 		{ &Z_Construct_UFunction_ARockmanCharacter_StartCommand, "StartCommand" }, // 1907174263
+		{ &Z_Construct_UFunction_ARockmanCharacter_TakeItem, "TakeItem" }, // 3654106117
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::Class_MetaDataParams[] = {
@@ -475,10 +556,23 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool = { "ProjectilePool", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARockmanCharacter, ProjectilePool), Z_Construct_UClass_UProjectilePoolComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData[] = {
+		{ "Comment", "//Bridge BluePrint Class Temp\n" },
 		{ "ModuleRelativePath", "RockmanCharacter.h" },
+		{ "ToolTip", "Bridge BluePrint Class Temp" },
 	};
 #endif
 	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class = { "Bridge_BP_Class", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARockmanCharacter, Bridge_BP_Class), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Inventory_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "Inventory" },
+		{ "Comment", "//Inventory Category\n" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "RockmanCharacter.h" },
+		{ "ToolTip", "Inventory Category" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARockmanCharacter, Inventory), Z_Construct_UClass_UInventoryComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Inventory_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Inventory_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CharName_MetaData[] = {
 		{ "Category", "profile" },
@@ -528,6 +622,7 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Inventory,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CharName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_InputInfo_Inner,
@@ -562,7 +657,7 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARockmanCharacter, 1839255120);
+	IMPLEMENT_CLASS(ARockmanCharacter, 1709898441);
 	template<> ROCKMAN_API UClass* StaticClass<ARockmanCharacter>()
 	{
 		return ARockmanCharacter::StaticClass();

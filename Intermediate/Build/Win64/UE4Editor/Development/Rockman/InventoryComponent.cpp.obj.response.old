@@ -267,7 +267,7 @@
 /FI"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Yu"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
 /Fp"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Rockman6.12 (2)\Source\Rockman\Private\InventoryComponent.cpp"
+"D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryComponent.cpp"
 /FI"D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h"
 /Fo"D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\InventoryComponent.cpp.obj"
 /TP

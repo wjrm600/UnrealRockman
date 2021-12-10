@@ -1,3 +1,5 @@
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h
 D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryComponent.h
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryComponent.generated.h
+D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryItem.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h

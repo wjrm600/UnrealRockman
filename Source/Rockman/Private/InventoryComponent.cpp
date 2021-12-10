@@ -2,6 +2,7 @@
 
 
 #include "InventoryComponent.h"
+#include "InventoryItem.h"
 
 // Sets default values for this component's properties
 UInventoryComponent::UInventoryComponent()
@@ -32,3 +33,12 @@ void UInventoryComponent::TickComponent(float DeltaTime, ELevelTick TickType, FA
 	// ...
 }
 
+int32 UInventoryComponent::AddToInventory(AInventoryItem* _actor)
+{
+	return CurrentInventory.Add(_actor);
+}
+
+void UInventoryComponent::RemoveFromInvectory(AInventoryItem* _actor)
+{
+	CurrentInventory.Remove(_actor);
+}

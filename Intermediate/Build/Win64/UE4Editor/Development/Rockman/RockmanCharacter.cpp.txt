@@ -46,3 +46,7 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanGameMode.generated.h
 d:\rockman6.12 (2)\source\rockman\ProjectilePoolComponent.h
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\ProjectilePoolComponent.generated.h
+D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryComponent.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryComponent.generated.h
+D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryItem.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h

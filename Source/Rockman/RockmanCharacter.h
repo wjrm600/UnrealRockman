@@ -7,6 +7,8 @@
 #include "RockmanCharacter.generated.h"
 
 class ARM_Projectile;
+class UInventoryComponent;
+class AInventoryItem;
 
 USTRUCT(BlueprintType)
 struct FInputInfo
@@ -47,9 +49,14 @@ class ARockmanCharacter : public ACharacter
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 		class UProjectilePoolComponent* ProjectilePool;
-
+	//Bridge BluePrint Class Temp
 	UPROPERTY()
 	TSubclassOf<AActor> Bridge_BP_Class;
+	
+	//Inventory Category
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Inventory, meta = (AllowPrivateAccess = "true"))
+	UInventoryComponent* Inventory;
+
 protected:
 
 	/** Called for side to side input */
@@ -112,4 +119,11 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Shoot")
 		bool bShoot;
+	//Inventory Category
+	UFUNCTION(BlueprintCallable)
+		void DropItem();
+	UFUNCTION(BlueprintCallable)
+		void TakeItem(AInventoryItem* _item);
+
+	
 };
