@@ -187,7 +187,7 @@ void ARockmanCharacter::MoveRight(float Value)
 
 void ARockmanCharacter::ShootEgg()
 {
-	bShoot = true;
+	//bShoot = true;
 }
 
 void ARockmanCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const FVector Location)
