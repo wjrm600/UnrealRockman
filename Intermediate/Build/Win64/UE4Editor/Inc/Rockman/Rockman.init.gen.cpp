@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeRockman_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xEADFAF0D,
+				0xAA4C78EA,
 				0xAFDC79C7,
 				METADATA_PARAMS(nullptr, 0)
 			};

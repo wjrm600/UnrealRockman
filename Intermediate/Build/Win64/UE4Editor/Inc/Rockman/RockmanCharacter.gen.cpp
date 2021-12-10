@@ -22,6 +22,8 @@ void EmptyLinkFunctionForGeneratedCodeRockmanCharacter() {}
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ROCKMAN_API UClass* Z_Construct_UClass_UProjectilePoolComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 // End Cross Module References
 class UScriptStruct* FCommand::StaticStruct()
 {
@@ -393,6 +395,10 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_ProjectilePool;
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Bridge_BP_Class_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Bridge_BP_Class;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CharName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FNamePropertyParams NewProp_CharName;
@@ -468,6 +474,12 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool = { "ProjectilePool", nullptr, (EPropertyFlags)0x00400000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARockmanCharacter, ProjectilePool), Z_Construct_UClass_UProjectilePoolComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool_MetaData)) };
 #if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData[] = {
+		{ "ModuleRelativePath", "RockmanCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class = { "Bridge_BP_Class", nullptr, (EPropertyFlags)0x0044000000000000, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ARockmanCharacter, Bridge_BP_Class), Z_Construct_UClass_AActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class_MetaData)) };
+#if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CharName_MetaData[] = {
 		{ "Category", "profile" },
 		{ "ModuleRelativePath", "RockmanCharacter.h" },
@@ -515,6 +527,7 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_SideViewCameraComponent,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CameraBoom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_ProjectilePool,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_Bridge_BP_Class,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_CharName,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ARockmanCharacter_Statics::NewProp_InputInfo_Inner,
@@ -549,7 +562,7 @@ static struct FScriptStruct_Rockman_StaticRegisterNativesFInputInfo
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ARockmanCharacter, 816784846);
+	IMPLEMENT_CLASS(ARockmanCharacter, 1839255120);
 	template<> ROCKMAN_API UClass* StaticClass<ARockmanCharacter>()
 	{
 		return ARockmanCharacter::StaticClass();

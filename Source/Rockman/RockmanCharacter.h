@@ -48,6 +48,8 @@ class ARockmanCharacter : public ACharacter
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Projectile, meta = (AllowPrivateAccess = "true"))
 		class UProjectilePoolComponent* ProjectilePool;
 
+	UPROPERTY()
+	TSubclassOf<AActor> Bridge_BP_Class;
 protected:
 
 	/** Called for side to side input */

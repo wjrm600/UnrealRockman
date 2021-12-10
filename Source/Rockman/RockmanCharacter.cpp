@@ -6,6 +6,7 @@
 #include "Components/InputComponent.h"
 #include "GameFramework/SpringArmComponent.h"
 #include "GameFramework/CharacterMovementComponent.h"
+#include "Kismet/KismetSystemLibrary.h"
 #include "RM_Projectile.h"
 #include "RockmanGameMode.h"
 #include "ProjectilePoolComponent.h"
@@ -79,6 +80,9 @@ ARockmanCharacter::ARockmanCharacter()
 	TempCommand.ComInputs.Emplace(TEXT("왼쪽 마우스 버튼"));
 	bHasUsedTempCommand = false;
 	bShoot = false;
+
+	static ConstructorHelpers::FClassFinder<AActor> BPClass(TEXT("Blueprint'/Game/Mouse/BP_bridge'"));
+	Bridge_BP_Class = BPClass.Class;
 }
 
 
@@ -190,13 +194,20 @@ void ARockmanCharacter::TouchStarted(const ETouchIndex::Type FingerIndex, const 
 {
 	// jump on any touch
 	TArray<AActor*> AOverlappingActor;
-	GetCapsuleComponent()->GetOverlappingActors(AOverlappingActor);
+	if (Bridge_BP_Class.Get() != NULL)
+	{
+		GetCapsuleComponent()->GetOverlappingActors(AOverlappingActor, Bridge_BP_Class.Get());
+	}
 	if (AOverlappingActor.IsValidIndex(0))
 	{
 		float fVecDot = FVector::DotProduct(GetActorForwardVector(), AOverlappingActor[0]->GetActorForwardVector());
 		if (FMath::IsNearlyEqual(fabsf(fVecDot), float(1.0), float(0.000001)))
 		{
 			Jump();
+		}
+		else
+		{
+			UKismetSystemLibrary::DrawDebugString(GetWorld(), GetActorLocation(), FString("Not working Jump"), NULL, FLinearColor(FColor::Yellow), 3.f);
 		}
 	}
 	else

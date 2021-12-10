@@ -90,7 +90,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ARockmanCharacter); \
 #define Rockman6_12__2__Source_Rockman_RockmanCharacter_h_38_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__SideViewCameraComponent() { return STRUCT_OFFSET(ARockmanCharacter, SideViewCameraComponent); } \
 	FORCEINLINE static uint32 __PPO__CameraBoom() { return STRUCT_OFFSET(ARockmanCharacter, CameraBoom); } \
-	FORCEINLINE static uint32 __PPO__ProjectilePool() { return STRUCT_OFFSET(ARockmanCharacter, ProjectilePool); }
+	FORCEINLINE static uint32 __PPO__ProjectilePool() { return STRUCT_OFFSET(ARockmanCharacter, ProjectilePool); } \
+	FORCEINLINE static uint32 __PPO__Bridge_BP_Class() { return STRUCT_OFFSET(ARockmanCharacter, Bridge_BP_Class); }
 
 
 #define Rockman6_12__2__Source_Rockman_RockmanCharacter_h_35_PROLOG
