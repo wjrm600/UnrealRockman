@@ -1,2 +1,2 @@
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h
-d:\rockman6.12 (2)\source\rockman\Rockman.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h
+c:\users\han\desktop\rockman\unrealrockman\source\rockman\Rockman.h
