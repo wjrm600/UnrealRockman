@@ -31,6 +31,11 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Interfaces/NetworkPredictionInterface.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NetworkPredictionInterface.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
 d:\rockman6.12 (2)\source\rockman\RM_Projectile.h
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RM_Projectile.generated.h
 d:\rockman6.12 (2)\source\rockman\RockmanGameMode.h
@@ -41,3 +46,7 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanGameMode.generated.h
 d:\rockman6.12 (2)\source\rockman\ProjectilePoolComponent.h
 D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\ProjectilePoolComponent.generated.h
+D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryComponent.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryComponent.generated.h
+D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryItem.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h
