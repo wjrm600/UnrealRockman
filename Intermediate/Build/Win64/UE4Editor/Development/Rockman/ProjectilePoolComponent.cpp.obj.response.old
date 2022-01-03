@@ -32,6 +32,7 @@
 /wd4244
 /wd4838
 /I .
+/I "D:\Rockman6.12 (2)\Source\Rockman\Private"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -233,6 +234,7 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I "D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman"
 /I "D:\Rockman6.12 (2)\Source"
+/I "D:\Rockman6.12 (2)\Source\Rockman\Public"
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf

@@ -1,12 +1,12 @@
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
-d:\rockman6.12 (2)\source\rockman\RockmanCharacter.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
+c:\users\han\desktop\rockman\unrealrockman\source\rockman\RockmanCharacter.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanCharacter.generated.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanCharacter.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Camera/CameraComponent.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CameraComponent.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
@@ -36,17 +36,17 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UOb
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
-d:\rockman6.12 (2)\source\rockman\RM_Projectile.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RM_Projectile.generated.h
-d:\rockman6.12 (2)\source\rockman\RockmanGameMode.h
+c:\users\han\desktop\rockman\unrealrockman\source\rockman\RM_Projectile.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RM_Projectile.generated.h
+c:\users\han\desktop\rockman\unrealrockman\source\rockman\RockmanGameMode.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanGameMode.generated.h
-d:\rockman6.12 (2)\source\rockman\ProjectilePoolComponent.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\ProjectilePoolComponent.generated.h
-D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryComponent.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryComponent.generated.h
-D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryItem.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanGameMode.generated.h
+c:\users\han\desktop\rockman\unrealrockman\source\rockman\ProjectilePoolComponent.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\ProjectilePoolComponent.generated.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Public\InventoryComponent.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryComponent.generated.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Public\InventoryItem.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h

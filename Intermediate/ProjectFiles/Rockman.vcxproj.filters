@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Rockman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{BFB96028-B9A5-405E-B2FA-2570AA41C914}</UniqueIdentifier>
+      <UniqueIdentifier>{DE71DADD-9494-4B8A-A779-B41DE23E6D9A}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Rockman.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{4E97695E-F771-41C1-897D-A7A62C6C7033}</UniqueIdentifier>
+      <UniqueIdentifier>{FED8EBF2-0999-48CD-A384-5DC2DC350901}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Rockman">
-      <UniqueIdentifier>{42EFAD8C-E064-4D34-A4C3-7B645E4A0781}</UniqueIdentifier>
+      <UniqueIdentifier>{75845754-0250-47AA-A2C4-90BE63E8621B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Rockman\ProjectilePoolComponent.cpp">
       <Filter>Source\Rockman</Filter>
@@ -68,7 +68,7 @@
       <Filter>Source\Rockman</Filter>
     </ClInclude>
     <Filter Include="Source\Rockman\Private">
-      <UniqueIdentifier>{78C47040-8ED5-4F2C-8371-9E8233B03243}</UniqueIdentifier>
+      <UniqueIdentifier>{31570728-8815-4FDE-BC7F-994202142214}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryComponent.cpp">
       <Filter>Source\Rockman\Private</Filter>
@@ -77,7 +77,7 @@
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Rockman\Public">
-      <UniqueIdentifier>{485F7138-1A29-48BB-A9BC-2772FF1E5A6E}</UniqueIdentifier>
+      <UniqueIdentifier>{E4BFBE7F-D07B-4349-85D8-9BC89AA74623}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryComponent.h">
       <Filter>Source\Rockman\Public</Filter>

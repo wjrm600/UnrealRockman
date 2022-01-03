@@ -1,3 +1,3 @@
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
-D:\Rockman6.12 (2)\Source\Rockman\Public\InventoryItem.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Public\InventoryItem.h
+C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\InventoryItem.generated.h
