@@ -14,20 +14,20 @@ class AInventoryItem;
 #endif
 #define ROCKMAN_InventoryComponent_generated_h
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execRemoveFromInvectory); \
 	DECLARE_FUNCTION(execAddToInventory);
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execRemoveFromInvectory); \
 	DECLARE_FUNCTION(execAddToInventory);
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_INCLASS_NO_PURE_DECLS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUInventoryComponent(); \
 	friend struct Z_Construct_UClass_UInventoryComponent_Statics; \
@@ -36,7 +36,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryComponent)
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_INCLASS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesUInventoryComponent(); \
 	friend struct Z_Construct_UClass_UInventoryComponent_Statics; \
@@ -45,7 +45,7 @@ public: \
 	DECLARE_SERIALIZER(UInventoryComponent)
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_STANDARD_CONSTRUCTORS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UInventoryComponent(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UInventoryComponent) \
@@ -58,7 +58,7 @@ private: \
 public:
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_ENHANCED_CONSTRUCTORS \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API UInventoryComponent(UInventoryComponent&&); \
@@ -69,28 +69,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UInventoryComponent); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UInventoryComponent)
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_11_PROLOG
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_GENERATED_BODY_LEGACY \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_11_PROLOG
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_INCLASS \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_STANDARD_CONSTRUCTORS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_INCLASS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_GENERATED_BODY \
+#define Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_INCLASS_NO_PURE_DECLS \
-	UnrealRockman_Source_Rockman_Public_InventoryComponent_h_14_ENHANCED_CONSTRUCTORS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_PRIVATE_PROPERTY_OFFSET \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_SPARSE_DATA \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_INCLASS_NO_PURE_DECLS \
+	Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -98,7 +98,7 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 template<> ROCKMAN_API UClass* StaticClass<class UInventoryComponent>();
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID UnrealRockman_Source_Rockman_Public_InventoryComponent_h
+#define CURRENT_FILE_ID Rockman6_12__2__Source_Rockman_Public_InventoryComponent_h
 
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
