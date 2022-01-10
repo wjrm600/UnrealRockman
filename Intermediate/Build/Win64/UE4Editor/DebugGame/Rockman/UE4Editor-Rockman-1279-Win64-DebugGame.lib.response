@@ -1,0 +1,28 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Rockman-1279-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\InventoryComponent.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\InventoryItem.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Monster_Base.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\ProjectilePoolComponent.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RM_Projectile.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Rockman.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RockmanCharacter.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RockmanGameMode.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\InventoryComponent.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\InventoryItem.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Monster_Base.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\ProjectilePoolComponent.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RM_Projectile.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Rockman.init.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RockmanCharacter.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\RockmanGameMode.gen.cpp.obj"
+"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Default.rc2.res"
+/OUT:"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\UE4Editor-Rockman-1279-Win64-DebugGame.lib"
+/INCLUDE:IMPLEMENT_MODULE_Rockman
