@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Rockman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{DE71DADD-9494-4B8A-A779-B41DE23E6D9A}</UniqueIdentifier>
+      <UniqueIdentifier>{67D5343A-1588-4AA8-9624-BFF3E37D5B2F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Rockman.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FED8EBF2-0999-48CD-A384-5DC2DC350901}</UniqueIdentifier>
+      <UniqueIdentifier>{349D4A3D-655E-47CF-89E3-CD9462173E10}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,7 +32,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Rockman">
-      <UniqueIdentifier>{75845754-0250-47AA-A2C4-90BE63E8621B}</UniqueIdentifier>
+      <UniqueIdentifier>{991B9E73-C192-462A-B328-8872D5391402}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Rockman\ProjectilePoolComponent.cpp">
       <Filter>Source\Rockman</Filter>
@@ -68,7 +68,7 @@
       <Filter>Source\Rockman</Filter>
     </ClInclude>
     <Filter Include="Source\Rockman\Private">
-      <UniqueIdentifier>{31570728-8815-4FDE-BC7F-994202142214}</UniqueIdentifier>
+      <UniqueIdentifier>{6C41FA62-0225-4F04-B1F3-AA4764B5D601}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryComponent.cpp">
       <Filter>Source\Rockman\Private</Filter>
@@ -76,13 +76,19 @@
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryItem.cpp">
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Rockman\Private\Monster_Base.cpp">
+      <Filter>Source\Rockman\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\Rockman\Public">
-      <UniqueIdentifier>{E4BFBE7F-D07B-4349-85D8-9BC89AA74623}</UniqueIdentifier>
+      <UniqueIdentifier>{E36AAAC5-3E3A-4A10-A1CB-2B0DF8BF2541}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryComponent.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryItem.h">
+      <Filter>Source\Rockman\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Rockman\Public\Monster_Base.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
   </ItemGroup>
