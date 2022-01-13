@@ -3,6 +3,7 @@
 
 #include "Monster_Base.h"
 #include "Kismet/GameplayStatics.h"
+#include "MonsterStateComponent.h"
 
 // Sets default values
 AMonster_Base::AMonster_Base()
@@ -10,6 +11,7 @@ AMonster_Base::AMonster_Base()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	StateCom = CreateDefaultSubobject<UMonsterStateComponent>(TEXT("State"));
 	/*
 	ConstructorHelpers::FObjectFinder<UAnimMontage> DAMAGE_MONTAGE(TEXT("AnimMontage'/Game/SkeletonCrew/Skeleton_Swordman/Animations/Skeleton_Swordman_Hit_Front_Montage.Skeleton_Swordman_Hit_Front_Montage'"));
 	if (DAMAGE_MONTAGE.Succeeded())
@@ -39,6 +41,11 @@ void AMonster_Base::Tick(float DeltaTime)
 		{
 			GetMesh()->SetVisibility(false);
 		}), WaitTime, false);
+	}
+
+	if (StateCom->state_ != nullptr)
+	{
+		StateCom->Update();
 	}
 }
 

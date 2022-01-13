@@ -6,6 +6,8 @@
 #include "GameFramework/Character.h"
 #include "Monster_Base.generated.h"
 
+class UMonsterStateComponent;
+
 UCLASS()
 class ROCKMAN_API AMonster_Base : public ACharacter
 {
@@ -14,7 +16,9 @@ class ROCKMAN_API AMonster_Base : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMonster_Base();
-
+	
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = State, meta = (AllowPrivateAccess = "true"))
+		class UMonsterStateComponent* StateCom;
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
