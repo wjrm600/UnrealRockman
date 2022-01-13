@@ -17,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 	ROCKMAN_API UClass* Z_Construct_UClass_AMonster_Base();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_Rockman();
+	ROCKMAN_API UClass* Z_Construct_UClass_UMonsterStateComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(AMonster_Base::execMonsterAttack)
@@ -69,6 +70,10 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
 #if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_StateCom_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_StateCom;
+#if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_IsDamageMontage_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_IsDamageMontage;
@@ -109,6 +114,15 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		{ "ModuleRelativePath", "Public/Monster_Base.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonster_Base_Statics::NewProp_StateCom_MetaData[] = {
+		{ "AllowPrivateAccess", "true" },
+		{ "Category", "State" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/Monster_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMonster_Base_Statics::NewProp_StateCom = { "StateCom", nullptr, (EPropertyFlags)0x00100000000a001d, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMonster_Base, StateCom), Z_Construct_UClass_UMonsterStateComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_AMonster_Base_Statics::NewProp_StateCom_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Base_Statics::NewProp_StateCom_MetaData)) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamageMontage_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Monster_Base.h" },
@@ -156,6 +170,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 	}
 	const UE4CodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamage = { "IsDamage", nullptr, (EPropertyFlags)0x0010000000000005, UE4CodeGen_Private::EPropertyGenFlags::Bool | UE4CodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, 1, sizeof(bool), sizeof(AMonster_Base), &Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamage_SetBit, METADATA_PARAMS(Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamage_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamage_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMonster_Base_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_StateCom,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsDamageMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_HP,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsAttack,
@@ -189,7 +204,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonster_Base, 4104588393);
+	IMPLEMENT_CLASS(AMonster_Base, 998689932);
 	template<> ROCKMAN_API UClass* StaticClass<AMonster_Base>()
 	{
 		return AMonster_Base::StaticClass();
