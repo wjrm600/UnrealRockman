@@ -21,8 +21,8 @@ void EmptyLinkFunctionForGeneratedCodeRockman_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000000,
-				0xC8D2521E,
-				0x1DE0E71E,
+				0x2B5216F5,
+				0x9648E87C,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
