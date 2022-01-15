@@ -7,6 +7,8 @@
 #include "MonsterState.h"
 #include "MonsterStateComponent.generated.h"
 
+class UStandState;
+
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
 class ROCKMAN_API UMonsterStateComponent : public UActorComponent
 {
@@ -42,74 +44,101 @@ public:
 	}
 };
 
-class JumpState : public UMonsterState
+UCLASS()
+class ROCKMAN_API UJumpState : public UMonsterState
 {
+	GENERATED_BODY()
 private:
 public:
-	JumpState() {}
-	virtual ~JumpState() {}
-	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input)
+	UJumpState() {}
+	virtual ~UJumpState() {}
+	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override
 	{
 		return this;
 	}
-	virtual void Update(UMonsterStateComponent& actorcom)
+	virtual void Update(UMonsterStateComponent& actorcom) override
 	{
-
 	}
-	virtual void Enter(UMonsterStateComponent& actorcom)
+	virtual void Enter(UMonsterStateComponent& actorcom) override
 	{
 
 	}
 };
 
-class RunState : public UMonsterState
+UCLASS()
+class ROCKMAN_API URunState : public UMonsterState
 {
+	GENERATED_BODY()
 private:
 public:
-	RunState() {}
-	virtual ~RunState() {}
-	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input)
+	URunState() {}
+	virtual ~URunState() {}
+	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override
 	{
 		return this;
 	}
-	virtual void Update(UMonsterStateComponent& actorcom)
+	virtual void Update(UMonsterStateComponent& actorcom) override
 	{
 
 	}
-	virtual void Enter(UMonsterStateComponent& actorcom)
+	virtual void Enter(UMonsterStateComponent& actorcom) override
 	{
 
 	}
 };
 
-class StandState : public UMonsterState
+UCLASS()
+class ROCKMAN_API UAttackState : public UMonsterState
 {
+	GENERATED_BODY()
 private:
 public:
-	StandState() {}
-	virtual ~StandState() {}
-	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input)
+	UAttackState() {}
+	virtual ~UAttackState() {}
+	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override
 	{
-		if (input == PRESS_UP)
+		UE_LOG(LogTemp, Warning, TEXT("Now Attack State"));
+		return this;
+	}
+
+	virtual void Update(UMonsterStateComponent& actorcom) override;
+	virtual void Enter(UMonsterStateComponent& actorcom) override
+	{
+
+	}
+};
+
+UCLASS()
+class ROCKMAN_API UStandState : public UMonsterState
+{
+	GENERATED_BODY()
+private:
+public:
+	UStandState() {}
+	virtual ~UStandState() {}
+	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override
+	{
+		if (input == ATTACK)
 		{
-			return NewObject<JumpState>();
+			UE_LOG(LogTemp, Warning, TEXT("Now Stand State"));
+			return NewObject<UAttackState>();
 		}
-		if (input == PRESS_RIGHT)
+		if (input == CHASE)
 		{
-			return NewObject<RunState>();
+			return NewObject<URunState>();
 		}
-		if (input == PRESS_LEFT)
+		if (input == SEARCH)
 		{
-			return NewObject<RunState>();
+			return NewObject<URunState>();
 		}
 		return this;
 	}
 
-	virtual void Update(UMonsterStateComponent& actorcom)
+	virtual void Update(UMonsterStateComponent& actorcom) override
 	{
 
 	}
-	virtual void Enter(UMonsterStateComponent& actorcom)
+	virtual void Enter(UMonsterStateComponent& actorcom) override
 	{
 
 	}

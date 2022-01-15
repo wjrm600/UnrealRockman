@@ -30,7 +30,7 @@ void ARockmanCharacter::Tick(float DeltaTime)
 			bShoot = false;
 		}
 	}
-	UE_LOG(LogTemp, Warning, TEXT("C++ClassTick"));
+	//UE_LOG(LogTemp, Warning, TEXT("C++ClassTick"));
 }
 
 ARockmanCharacter::ARockmanCharacter()

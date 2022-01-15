@@ -76,9 +76,6 @@
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryItem.cpp">
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\Rockman\Private\MonsterStateComponent.cpp">
-      <Filter>Source\Rockman\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\Rockman\Private\Monster_Base.cpp">
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
@@ -91,16 +88,26 @@
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryItem.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Rockman\Public\MonsterStateComponent.h">
-      <Filter>Source\Rockman\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Rockman\Public\Monster_Base.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <Filter Include="Source\Rockman\State">
+      <UniqueIdentifier>{81206c0e-56d0-4fce-a780-48b317de64ff}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Rockman\Private\MonsterStateComponent.cpp">
+      <Filter>Source\Rockman\State</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="..\..\Source\Rockman\Public\MonsterState.h">
-      <Filter>Source\Rockman\Public</Filter>
+      <Filter>Source\Rockman\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Rockman\Public\MonsterStateComponent.h">
+      <Filter>Source\Rockman\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

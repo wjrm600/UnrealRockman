@@ -19,7 +19,7 @@ void UMonsterStateComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	state_ = NewObject<StandState>();
+	state_ = NewObject<UStandState>();
 }
 
 
@@ -29,5 +29,14 @@ void UMonsterStateComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
 
 	// ...
+	if (state_ != nullptr)
+	{
+		Update();
+	}
 }
 
+void UAttackState::Update(UMonsterStateComponent& actorcom)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Now Attack Tick"));
+	actorcom.state_ = NewObject<UStandState>();
+}
