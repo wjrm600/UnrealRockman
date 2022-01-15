@@ -32,7 +32,7 @@
 /wd4244
 /wd4838
 /I .
-/I "D:\Rockman6.12 (2)\Source\Rockman\Private"
+/I C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime
 /I Runtime\Engine\Classes
@@ -232,9 +232,9 @@
 /I Editor\Kismet\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
-/I "D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman"
-/I "D:\Rockman6.12 (2)\Source"
-/I "D:\Rockman6.12 (2)\Source\Rockman\Public"
+/I C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Inc\Rockman
+/I C:\Users\han\Desktop\Rockman\UnrealRockman\Source
+/I C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
@@ -264,12 +264,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/FI"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Yu"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-"D:\Rockman6.12 (2)\Source\Rockman\Private\InventoryComponent.cpp"
-/FI"D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h"
-/Fo"D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Development\Rockman\InventoryComponent.cpp.obj"
+/FI"C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Yu"C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\RockmanEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+"C:\Users\han\Desktop\Rockman\UnrealRockman\Source\Rockman\Private\InventoryComponent.cpp"
+/FI"C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\Definitions.Rockman.h"
+/Fo"C:\Users\han\Desktop\Rockman\UnrealRockman\Intermediate\Build\Win64\UE4Editor\Development\Rockman\InventoryComponent.cpp.obj"
 /TP
 /GR-
 /W4
