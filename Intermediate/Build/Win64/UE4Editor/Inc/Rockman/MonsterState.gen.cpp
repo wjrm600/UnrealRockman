@@ -33,7 +33,7 @@ void EmptyLinkFunctionForGeneratedCodeMonsterState() {}
 		return MInput_StaticEnum();
 	}
 	static FCompiledInDeferEnum Z_CompiledInDeferEnum_UEnum_MInput(MInput_StaticEnum, TEXT("/Script/Rockman"), TEXT("MInput"), false, nullptr, nullptr);
-	uint32 Get_Z_Construct_UEnum_Rockman_MInput_Hash() { return 3960896151U; }
+	uint32 Get_Z_Construct_UEnum_Rockman_MInput_Hash() { return 3779583221U; }
 	UEnum* Z_Construct_UEnum_Rockman_MInput()
 	{
 #if WITH_HOT_RELOAD
@@ -45,34 +45,24 @@ void EmptyLinkFunctionForGeneratedCodeMonsterState() {}
 		if (!ReturnEnum)
 		{
 			static const UE4CodeGen_Private::FEnumeratorParam Enumerators[] = {
-				{ "PRESS_UP", (int64)PRESS_UP },
-				{ "RELEASE_UP", (int64)RELEASE_UP },
-				{ "PRESS_DOWN", (int64)PRESS_DOWN },
-				{ "RELEASE_DOWN", (int64)RELEASE_DOWN },
-				{ "PRESS_LEFT", (int64)PRESS_LEFT },
-				{ "RELEASE_LEFT", (int64)RELEASE_LEFT },
-				{ "PRESS_RIGHT", (int64)PRESS_RIGHT },
-				{ "RELEASE_RIGHT", (int64)RELEASE_RIGHT },
-				{ "PRESS_MLEFT", (int64)PRESS_MLEFT },
-				{ "RELEASE_MLEFT", (int64)RELEASE_MLEFT },
-				{ "PRESS_MRIGHT", (int64)PRESS_MRIGHT },
-				{ "RELEASE_MRIGHT", (int64)RELEASE_MRIGHT },
+				{ "IDLE", (int64)IDLE },
+				{ "ATTACK", (int64)ATTACK },
+				{ "DAMAGE", (int64)DAMAGE },
+				{ "JUMP", (int64)JUMP },
+				{ "CHASE", (int64)CHASE },
+				{ "SEARCH", (int64)SEARCH },
+				{ "DEAD", (int64)DEAD },
 			};
 #if WITH_METADATA
 			const UE4CodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+				{ "ATTACK.Name", "ATTACK" },
+				{ "CHASE.Name", "CHASE" },
+				{ "DAMAGE.Name", "DAMAGE" },
+				{ "DEAD.Name", "DEAD" },
+				{ "IDLE.Name", "IDLE" },
+				{ "JUMP.Name", "JUMP" },
 				{ "ModuleRelativePath", "Public/MonsterState.h" },
-				{ "PRESS_DOWN.Name", "PRESS_DOWN" },
-				{ "PRESS_LEFT.Name", "PRESS_LEFT" },
-				{ "PRESS_MLEFT.Name", "PRESS_MLEFT" },
-				{ "PRESS_MRIGHT.Name", "PRESS_MRIGHT" },
-				{ "PRESS_RIGHT.Name", "PRESS_RIGHT" },
-				{ "PRESS_UP.Name", "PRESS_UP" },
-				{ "RELEASE_DOWN.Name", "RELEASE_DOWN" },
-				{ "RELEASE_LEFT.Name", "RELEASE_LEFT" },
-				{ "RELEASE_MLEFT.Name", "RELEASE_MLEFT" },
-				{ "RELEASE_MRIGHT.Name", "RELEASE_MRIGHT" },
-				{ "RELEASE_RIGHT.Name", "RELEASE_RIGHT" },
-				{ "RELEASE_UP.Name", "RELEASE_UP" },
+				{ "SEARCH.Name", "SEARCH" },
 			};
 #endif
 			static const UE4CodeGen_Private::FEnumParams EnumParams = {
@@ -133,7 +123,7 @@ void EmptyLinkFunctionForGeneratedCodeMonsterState() {}
 		0,
 		0,
 		0,
-		0x000000A0u,
+		0x001000A1u,
 		METADATA_PARAMS(Z_Construct_UClass_UMonsterState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UMonsterState_Statics::Class_MetaDataParams))
 	};
 	UClass* Z_Construct_UClass_UMonsterState()
@@ -145,7 +135,7 @@ void EmptyLinkFunctionForGeneratedCodeMonsterState() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMonsterState, 2891110440);
+	IMPLEMENT_CLASS(UMonsterState, 397928478);
 	template<> ROCKMAN_API UClass* StaticClass<UMonsterState>()
 	{
 		return UMonsterState::StaticClass();

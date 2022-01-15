@@ -42,11 +42,6 @@ void AMonster_Base::Tick(float DeltaTime)
 			GetMesh()->SetVisibility(false);
 		}), WaitTime, false);
 	}
-
-	if (StateCom->state_ != nullptr)
-	{
-		StateCom->Update();
-	}
 }
 
 void AMonster_Base::MonsterAttack()

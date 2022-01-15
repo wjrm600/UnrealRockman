@@ -19,6 +19,15 @@ void EmptyLinkFunctionForGeneratedCodeMonsterStateComponent() {}
 	UPackage* Z_Construct_UPackage__Script_Rockman();
 	ROCKMAN_API UEnum* Z_Construct_UEnum_Rockman_MInput();
 	ROCKMAN_API UClass* Z_Construct_UClass_UMonsterState_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UJumpState_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UJumpState();
+	ROCKMAN_API UClass* Z_Construct_UClass_UMonsterState();
+	ROCKMAN_API UClass* Z_Construct_UClass_URunState_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_URunState();
+	ROCKMAN_API UClass* Z_Construct_UClass_UAttackState_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UAttackState();
+	ROCKMAN_API UClass* Z_Construct_UClass_UStandState_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UStandState();
 // End Cross Module References
 	DEFINE_FUNCTION(UMonsterStateComponent::execHandleInput)
 	{
@@ -146,6 +155,246 @@ void EmptyLinkFunctionForGeneratedCodeMonsterStateComponent() {}
 	}
 	static FCompiledInDefer Z_CompiledInDefer_UClass_UMonsterStateComponent(Z_Construct_UClass_UMonsterStateComponent, &UMonsterStateComponent::StaticClass, TEXT("/Script/Rockman"), TEXT("UMonsterStateComponent"), false, nullptr, nullptr, nullptr);
 	DEFINE_VTABLE_PTR_HELPER_CTOR(UMonsterStateComponent);
+	void UJumpState::StaticRegisterNativesUJumpState()
+	{
+	}
+	UClass* Z_Construct_UClass_UJumpState_NoRegister()
+	{
+		return UJumpState::StaticClass();
+	}
+	struct Z_Construct_UClass_UJumpState_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UJumpState_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UMonsterState,
+		(UObject* (*)())Z_Construct_UPackage__Script_Rockman,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UJumpState_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "MonsterStateComponent.h" },
+		{ "ModuleRelativePath", "Public/MonsterStateComponent.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UJumpState_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UJumpState>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UJumpState_Statics::ClassParams = {
+		&UJumpState::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UJumpState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UJumpState_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UJumpState()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UJumpState_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UJumpState, 3756043947);
+	template<> ROCKMAN_API UClass* StaticClass<UJumpState>()
+	{
+		return UJumpState::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UJumpState(Z_Construct_UClass_UJumpState, &UJumpState::StaticClass, TEXT("/Script/Rockman"), TEXT("UJumpState"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UJumpState);
+	void URunState::StaticRegisterNativesURunState()
+	{
+	}
+	UClass* Z_Construct_UClass_URunState_NoRegister()
+	{
+		return URunState::StaticClass();
+	}
+	struct Z_Construct_UClass_URunState_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_URunState_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UMonsterState,
+		(UObject* (*)())Z_Construct_UPackage__Script_Rockman,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_URunState_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "MonsterStateComponent.h" },
+		{ "ModuleRelativePath", "Public/MonsterStateComponent.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_URunState_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<URunState>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_URunState_Statics::ClassParams = {
+		&URunState::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_URunState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_URunState_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_URunState()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_URunState_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(URunState, 856882067);
+	template<> ROCKMAN_API UClass* StaticClass<URunState>()
+	{
+		return URunState::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_URunState(Z_Construct_UClass_URunState, &URunState::StaticClass, TEXT("/Script/Rockman"), TEXT("URunState"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(URunState);
+	void UAttackState::StaticRegisterNativesUAttackState()
+	{
+	}
+	UClass* Z_Construct_UClass_UAttackState_NoRegister()
+	{
+		return UAttackState::StaticClass();
+	}
+	struct Z_Construct_UClass_UAttackState_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UAttackState_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UMonsterState,
+		(UObject* (*)())Z_Construct_UPackage__Script_Rockman,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UAttackState_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "MonsterStateComponent.h" },
+		{ "ModuleRelativePath", "Public/MonsterStateComponent.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UAttackState_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UAttackState>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UAttackState_Statics::ClassParams = {
+		&UAttackState::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UAttackState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UAttackState_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UAttackState()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UAttackState_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UAttackState, 274089729);
+	template<> ROCKMAN_API UClass* StaticClass<UAttackState>()
+	{
+		return UAttackState::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UAttackState(Z_Construct_UClass_UAttackState, &UAttackState::StaticClass, TEXT("/Script/Rockman"), TEXT("UAttackState"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UAttackState);
+	void UStandState::StaticRegisterNativesUStandState()
+	{
+	}
+	UClass* Z_Construct_UClass_UStandState_NoRegister()
+	{
+		return UStandState::StaticClass();
+	}
+	struct Z_Construct_UClass_UStandState_Statics
+	{
+		static UObject* (*const DependentSingletons[])();
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
+#endif
+		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
+		static const UE4CodeGen_Private::FClassParams ClassParams;
+	};
+	UObject* (*const Z_Construct_UClass_UStandState_Statics::DependentSingletons[])() = {
+		(UObject* (*)())Z_Construct_UClass_UMonsterState,
+		(UObject* (*)())Z_Construct_UPackage__Script_Rockman,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UStandState_Statics::Class_MetaDataParams[] = {
+		{ "IncludePath", "MonsterStateComponent.h" },
+		{ "ModuleRelativePath", "Public/MonsterStateComponent.h" },
+	};
+#endif
+	const FCppClassTypeInfoStatic Z_Construct_UClass_UStandState_Statics::StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<UStandState>::IsAbstract,
+	};
+	const UE4CodeGen_Private::FClassParams Z_Construct_UClass_UStandState_Statics::ClassParams = {
+		&UStandState::StaticClass,
+		nullptr,
+		&StaticCppClassTypeInfo,
+		DependentSingletons,
+		nullptr,
+		nullptr,
+		nullptr,
+		UE_ARRAY_COUNT(DependentSingletons),
+		0,
+		0,
+		0,
+		0x001000A0u,
+		METADATA_PARAMS(Z_Construct_UClass_UStandState_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_UStandState_Statics::Class_MetaDataParams))
+	};
+	UClass* Z_Construct_UClass_UStandState()
+	{
+		static UClass* OuterClass = nullptr;
+		if (!OuterClass)
+		{
+			UE4CodeGen_Private::ConstructUClass(OuterClass, Z_Construct_UClass_UStandState_Statics::ClassParams);
+		}
+		return OuterClass;
+	}
+	IMPLEMENT_CLASS(UStandState, 1737678385);
+	template<> ROCKMAN_API UClass* StaticClass<UStandState>()
+	{
+		return UStandState::StaticClass();
+	}
+	static FCompiledInDefer Z_CompiledInDefer_UClass_UStandState(Z_Construct_UClass_UStandState, &UStandState::StaticClass, TEXT("/Script/Rockman"), TEXT("UStandState"), false, nullptr, nullptr, nullptr);
+	DEFINE_VTABLE_PTR_HELPER_CTOR(UStandState);
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 #ifdef _MSC_VER
 #pragma warning (pop)
