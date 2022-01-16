@@ -66,10 +66,7 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(AMonster_Base); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AMonster_Base)
 
 
-#define Rockman6_12__2__Source_Rockman_Public_Monster_Base_h_14_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__IsDamageMontage() { return STRUCT_OFFSET(AMonster_Base, IsDamageMontage); }
-
-
+#define Rockman6_12__2__Source_Rockman_Public_Monster_Base_h_14_PRIVATE_PROPERTY_OFFSET
 #define Rockman6_12__2__Source_Rockman_Public_Monster_Base_h_11_PROLOG
 #define Rockman6_12__2__Source_Rockman_Public_Monster_Base_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
