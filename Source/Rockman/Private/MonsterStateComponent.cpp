@@ -251,3 +251,30 @@ void UDeadState::Enter(UMonsterStateComponent& actorcom)
 {
 	actorcom.IsDead = true;
 }
+
+void UAttackState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsAttack = false;
+}
+
+void UJumpState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsJump = false;
+}
+void URunState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsRun = false;
+}
+
+void UIdleState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsIdle = false;
+}
+void UDamageState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDamage = false;
+}
+void UDeadState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDead = false;
+}

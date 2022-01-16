@@ -48,6 +48,7 @@ public:
 	UFUNCTION(BlueprintCallable)
 	void HandleInput(MInput input)
 	{
+		state_->Exit(*this);
 		UMonsterState* state = state_->HandleInput(*this, input);
 		state_ = state;
 
@@ -71,6 +72,7 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
 
 UCLASS()
@@ -84,6 +86,7 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
 
 UCLASS()
@@ -97,6 +100,7 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
 
 UCLASS()
@@ -110,6 +114,7 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
 
 UCLASS()
@@ -123,6 +128,7 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
 
 UCLASS()
@@ -136,4 +142,5 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) override;
 	virtual void Update(UMonsterStateComponent& actorcom) override;
 	virtual void Enter(UMonsterStateComponent& actorcom) override;
+	virtual void Exit(UMonsterStateComponent& actorcom) override;
 };
