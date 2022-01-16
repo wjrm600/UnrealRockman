@@ -25,7 +25,6 @@ AMonster_Base::AMonster_Base()
 void AMonster_Base::BeginPlay()
 {
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
@@ -33,7 +32,7 @@ void AMonster_Base::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	if (IsDead)
+	if (StateCom->IsDead)
 	{
 		FTimerHandle WaitTimer;
 		float WaitTime = 2.f;
@@ -46,7 +45,7 @@ void AMonster_Base::Tick(float DeltaTime)
 
 void AMonster_Base::MonsterAttack()
 {
-	IsAttack = true;
+	StateCom->HandleInput(MInput::ATTACK);
 	float TraceDistance = 100.f;
 	FHitResult HitResult;
 	FVector TraceStartVec = GetMesh()->GetSocketLocation(FName("spine_01"));
@@ -73,13 +72,13 @@ float AMonster_Base::TakeDamage(float DamageAmount, struct FDamageEvent const& D
 
 	if (HP <= 0)
 	{
-		IsDead = true;
+		StateCom->HandleInput(MInput::DEAD);
 		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
 	else
 	{
-		IsDamage = true;
-		//GetMesh()->GetAnimInstance()->Montage_Play(IsDamageMontage.GetDefaultObject());
+		StateCom->HandleInput(MInput::DAMAGE);
+		GetMesh()->GetAnimInstance()->Montage_Play(IsDamageMontage.Get());
 	}
 	return ResultDamage;
 }

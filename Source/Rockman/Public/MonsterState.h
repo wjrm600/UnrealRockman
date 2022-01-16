@@ -27,4 +27,5 @@ public:
 	virtual UMonsterState* HandleInput(UMonsterStateComponent& actorcom, MInput input) PURE_VIRTUAL(UMonsterState::HandleInput, return this;);
 	virtual void Update(UMonsterStateComponent& actorcom) {}
 	virtual void Enter(UMonsterStateComponent& actorcom) {}
+	virtual void Exit(UMonsterStateComponent& actorcom) {}
 };

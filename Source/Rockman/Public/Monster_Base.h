@@ -22,24 +22,15 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
-	UPROPERTY()
-	UAnimMontage* IsDamageMontage;
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, Category = "Montage")
+		TAssetPtr<UAnimMontage> IsDamageMontage;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = profile)
 		int32 HP = 300;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = state)
-		bool IsAttack = false;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = state)
-		bool IsDead = false;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = state)
-		bool IsDamage = false;
 
 	UFUNCTION(BlueprintCallable, Category = Movement)
 		void MonsterAttack();

@@ -19,7 +19,7 @@ void UMonsterStateComponent::BeginPlay()
 	Super::BeginPlay();
 
 	// ...
-	state_ = NewObject<UStandState>();
+	state_ = NewObject<UIdleState>();
 }
 
 
@@ -35,8 +35,246 @@ void UMonsterStateComponent::TickComponent(float DeltaTime, ELevelTick TickType,
 	}
 }
 
+UMonsterState* UAttackState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	if (input == IDLE)
+	{
+		return NewObject<UIdleState>();
+	}
+	else if (input == ATTACK)
+	{
+	}
+	else if (input == DAMAGE)
+	{
+		return NewObject<UDamageState>();
+	}
+	else if (input == JUMP)
+	{
+	}
+	else if (input == CHASE)
+	{
+	}
+	else if (input == SEARCH)
+	{
+	}
+	else if (input == DEAD)
+	{
+		return NewObject<UDeadState>();
+	}
+	return this;
+}
+
+UMonsterState* UJumpState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	if (input == IDLE)
+	{
+		return NewObject<UIdleState>();
+	}
+	else if (input == ATTACK)
+	{
+	}
+	else if (input == DAMAGE)
+	{
+		return NewObject<UDamageState>();
+	}
+	else if (input == JUMP)
+	{
+	}
+	else if (input == CHASE)
+	{
+
+	}
+	else if (input == SEARCH)
+	{
+
+	}
+	else if (input == DEAD)
+	{
+		return NewObject<UDeadState>();
+	}
+	return this;
+}
+
+UMonsterState* URunState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	if (input == IDLE)
+	{
+		return NewObject<UIdleState>();
+	}
+	else if (input == ATTACK)
+	{
+		return NewObject<UAttackState>();
+	}
+	else if (input == DAMAGE)
+	{
+		return NewObject<UDamageState>();
+	}
+	else if (input == JUMP)
+	{
+		return NewObject<UJumpState>();
+	}
+	else if (input == CHASE)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == SEARCH)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == DEAD)
+	{
+		return NewObject<UDeadState>();
+	}
+	return this;
+}
+
+UMonsterState* UIdleState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	if (input == IDLE)
+	{
+	}
+	else if (input == ATTACK)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Now Attack State"));
+		return NewObject<UAttackState>();
+	}
+	else if (input == DAMAGE)
+	{
+		return NewObject<UDamageState>();
+	}
+	else if (input == JUMP)
+	{
+		return NewObject<UJumpState>();
+	}
+	else if (input == CHASE)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == SEARCH)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == DEAD)
+	{
+		return NewObject<UDeadState>();
+	}
+	return this;
+}
+
+UMonsterState* UDamageState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	if (input == IDLE)
+	{
+		return NewObject<UIdleState>();
+	}
+	else if (input == ATTACK)
+	{
+	}
+	else if (input == DAMAGE)
+	{
+		return NewObject<UDamageState>();
+	}
+	else if (input == JUMP)
+	{
+		return NewObject<UJumpState>();
+	}
+	else if (input == CHASE)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == SEARCH)
+	{
+		return NewObject<URunState>();
+	}
+	else if (input == DEAD)
+	{
+		return NewObject<UDeadState>();
+	}
+	return this;
+}
+
+UMonsterState* UDeadState::HandleInput(UMonsterStateComponent& actorcom, MInput input)
+{
+	return this;
+}
+
 void UAttackState::Update(UMonsterStateComponent& actorcom)
 {
-	UE_LOG(LogTemp, Warning, TEXT("Now Attack Tick"));
-	actorcom.state_ = NewObject<UStandState>();
+}
+
+void UJumpState::Update(UMonsterStateComponent& actorcom)
+{
+}
+
+void URunState::Update(UMonsterStateComponent& actorcom)
+{
+}
+
+void UIdleState::Update(UMonsterStateComponent& actorcom)
+{
+}
+
+void UDamageState::Update(UMonsterStateComponent& actorcom)
+{
+}
+
+void UDeadState::Update(UMonsterStateComponent& actorcom)
+{
+}
+
+void UAttackState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsAttack = true;
+}
+
+void UJumpState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsJump = true;
+}
+
+void URunState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsRun = true;
+}
+
+void UIdleState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsIdle = true;
+}
+
+void UDamageState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDamage = true;
+}
+
+void UDeadState::Enter(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDead = true;
+}
+
+void UAttackState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsAttack = false;
+}
+
+void UJumpState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsJump = false;
+}
+void URunState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsRun = false;
+}
+
+void UIdleState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsIdle = false;
+}
+void UDamageState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDamage = false;
+}
+void UDeadState::Exit(UMonsterStateComponent& actorcom)
+{
+	actorcom.IsDead = false;
 }
