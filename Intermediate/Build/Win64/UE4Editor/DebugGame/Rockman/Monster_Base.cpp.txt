@@ -1,12 +1,12 @@
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
-D:\Rockman6.12 (2)\Source\Rockman\Public\Monster_Base.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\DebugGame\Rockman\Definitions.Rockman.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Source\Rockman\Public\Monster_Base.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\Monster_Base.generated.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\Monster_Base.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
@@ -18,7 +18,12 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\In
 c:\program files\epic games\ue_4.26\engine\source\runtime\engine\classes\kismet\GameplayStaticsTypes.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
-D:\Rockman6.12 (2)\Source\Rockman\Public\MonsterStateComponent.h
-d:\rockman6.12 (2)\source\rockman\public\MonsterState.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\MonsterState.generated.h
-D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\MonsterStateComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/StreamableManager.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/CapsuleComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CapsuleComponent.generated.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Source\Rockman\Public\MonsterStateComponent.h
+c:\users\han\desktop\rockman6.12 (2)\source\rockman\public\MonsterState.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\MonsterState.generated.h
+C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\MonsterStateComponent.generated.h

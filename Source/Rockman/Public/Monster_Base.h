@@ -29,6 +29,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Montage")
 		TAssetPtr<UAnimMontage> IsDamageMontage;
 
+	UPROPERTY(EditAnywhere, Category = "Montage")
+		TAssetPtr<UAnimMontage> IsAttackMontage;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = profile)
 		int32 HP = 300;
 

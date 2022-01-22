@@ -3,6 +3,8 @@
 
 #include "Monster_Base.h"
 #include "Kismet/GameplayStatics.h"
+#include "Engine/StreamableManager.h"
+#include "Components/CapsuleComponent.h"
 #include "MonsterStateComponent.h"
 
 // Sets default values
@@ -25,6 +27,21 @@ AMonster_Base::AMonster_Base()
 void AMonster_Base::BeginPlay()
 {
 	Super::BeginPlay();
+
+	if (!IsDamageMontage.IsValid())
+	{
+		FStreamableManager AssetLoader;
+		FStringAssetReference AssetToLoad;
+		AssetToLoad = IsDamageMontage.ToStringReference();
+		AssetLoader.RequestAsyncLoad(AssetToLoad);
+	}
+	if (!IsAttackMontage.IsValid())
+	{
+		FStreamableManager AssetLoader;
+		FStringAssetReference AssetToLoad;
+		AssetToLoad = IsAttackMontage.ToStringReference();
+		AssetLoader.RequestAsyncLoad(AssetToLoad);
+	}
 }
 
 // Called every frame
@@ -46,6 +63,7 @@ void AMonster_Base::Tick(float DeltaTime)
 void AMonster_Base::MonsterAttack()
 {
 	StateCom->HandleInput(MInput::ATTACK);
+	GetMesh()->GetAnimInstance()->Montage_Play(IsAttackMontage.Get());
 	float TraceDistance = 100.f;
 	FHitResult HitResult;
 	FVector TraceStartVec = GetMesh()->GetSocketLocation(FName("spine_01"));
@@ -73,7 +91,8 @@ float AMonster_Base::TakeDamage(float DamageAmount, struct FDamageEvent const& D
 	if (HP <= 0)
 	{
 		StateCom->HandleInput(MInput::DEAD);
-		GetMesh()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
+		SetActorEnableCollision(false);
+		GetCapsuleComponent()->SetCollisionEnabled(ECollisionEnabled::NoCollision);
 	}
 	else
 	{
