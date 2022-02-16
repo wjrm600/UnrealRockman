@@ -257,11 +257,11 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt"
-/I "C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine"
-/Yc"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h"
-/Fp"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.pch"
-"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.cpp"
-/Fo"C:\Users\han\Desktop\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
+/I "D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine"
+/Yc"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h"
+/Fp"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.pch"
+"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.cpp"
+/Fo"D:\Rockman6.12 (2)\Intermediate\Build\Win64\RockmanEditor\DebugGame\Engine\SharedPCH.Engine.NonOptimized.ShadowErrors.h.obj"
 /TP
 /GR-
 /W4

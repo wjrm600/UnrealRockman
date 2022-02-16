@@ -6,6 +6,7 @@
 #include "Engine/StreamableManager.h"
 #include "Components/CapsuleComponent.h"
 #include "MonsterStateComponent.h"
+#include "MonsterAIController.h"
 
 // Sets default values
 AMonster_Base::AMonster_Base()
@@ -32,14 +33,14 @@ void AMonster_Base::BeginPlay()
 	{
 		FStreamableManager AssetLoader;
 		FStringAssetReference AssetToLoad;
-		AssetToLoad = IsDamageMontage.ToStringReference();
+		AssetToLoad = IsDamageMontage.ToSoftObjectPath();
 		AssetLoader.RequestAsyncLoad(AssetToLoad);
 	}
 	if (!IsAttackMontage.IsValid())
 	{
 		FStreamableManager AssetLoader;
 		FStringAssetReference AssetToLoad;
-		AssetToLoad = IsAttackMontage.ToStringReference();
+		AssetToLoad = IsAttackMontage.ToSoftObjectPath();
 		AssetLoader.RequestAsyncLoad(AssetToLoad);
 	}
 }
@@ -73,6 +74,7 @@ void AMonster_Base::MonsterAttack()
 	{
 		UGameplayStatics::ApplyDamage(HitResult.GetActor(), 10.f, NULL, GetOwner(), NULL);
 	}
+	Cast<AMonsterAIController>(Controller)->FUNC_BTBBChange.Broadcast();
 }
 
 // Called to bind functionality to input
@@ -99,5 +101,6 @@ float AMonster_Base::TakeDamage(float DamageAmount, struct FDamageEvent const& D
 		StateCom->HandleInput(MInput::DAMAGE);
 		GetMesh()->GetAnimInstance()->Montage_Play(IsDamageMontage.Get());
 	}
+	Cast<AMonsterAIController>(Controller)->FUNC_BTBBChange.Broadcast();
 	return ResultDamage;
 }
