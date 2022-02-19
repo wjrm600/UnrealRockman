@@ -6,4 +6,4 @@ C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFra
 C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
 C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
-d:\rockman6.12 (2)\intermediate\build\win64\ue4editor\inc\rockman\RockmanGameMode.generated.h
+D:\Rockman6.12 (2)\Intermediate\Build\Win64\UE4Editor\Inc\Rockman\RockmanGameMode.generated.h

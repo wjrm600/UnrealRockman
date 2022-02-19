@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Rockman.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{88693136-0C71-459A-B8D8-2A55AAC0CDB8}</UniqueIdentifier>
+      <UniqueIdentifier>{27DA3598-1709-4683-8927-9113AD1B3918}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Rockman.Target.cs">
       <Filter>Source</Filter>
@@ -14,7 +14,7 @@
     <None Include="..\..\.gitattributes" />
     <None Include="..\..\.gitignore" />
     <Filter Include="Config">
-      <UniqueIdentifier>{4B4AE70E-37DA-4AAE-8173-F56CB6743241}</UniqueIdentifier>
+      <UniqueIdentifier>{FEA53EC0-1523-45BE-9821-955FF5659E34}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -32,8 +32,14 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Rockman">
-      <UniqueIdentifier>{9858AC63-6F57-4AB3-B694-420C80A8A85B}</UniqueIdentifier>
+      <UniqueIdentifier>{AC915FA9-09C3-4C29-A036-5E640F803BD3}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\Rockman\MyTempInterface.cpp">
+      <Filter>Source\Rockman</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Rockman\MyTempInterface.h">
+      <Filter>Source\Rockman</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\Rockman\ProjectilePoolComponent.cpp">
       <Filter>Source\Rockman</Filter>
     </ClCompile>
@@ -68,7 +74,7 @@
       <Filter>Source\Rockman</Filter>
     </ClInclude>
     <Filter Include="Source\Rockman\Private">
-      <UniqueIdentifier>{C81C6B5E-C16E-46B4-A5EF-2E135F5DE0A7}</UniqueIdentifier>
+      <UniqueIdentifier>{9C7E1581-AD98-4AEF-992E-F3DE6F56887B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryComponent.cpp">
       <Filter>Source\Rockman\Private</Filter>
@@ -76,11 +82,14 @@
     <ClCompile Include="..\..\Source\Rockman\Private\InventoryItem.cpp">
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\Rockman\Private\MonsterStateComponent.cpp">
+      <Filter>Source\Rockman\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\Rockman\Private\Monster_Base.cpp">
       <Filter>Source\Rockman\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Rockman\Public">
-      <UniqueIdentifier>{47F29615-EC3A-40A4-A864-933A6AB151FC}</UniqueIdentifier>
+      <UniqueIdentifier>{39FC3698-F8BA-4399-8CF5-1151B494487E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryComponent.h">
       <Filter>Source\Rockman\Public</Filter>
@@ -88,26 +97,14 @@
     <ClInclude Include="..\..\Source\Rockman\Public\InventoryItem.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\Rockman\Public\Monster_Base.h">
+    <ClInclude Include="..\..\Source\Rockman\Public\MonsterState.h">
       <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Source\Rockman\State">
-      <UniqueIdentifier>{81206c0e-56d0-4fce-a780-48b317de64ff}</UniqueIdentifier>
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\Source\Rockman\Private\MonsterStateComponent.cpp">
-      <Filter>Source\Rockman\State</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\Rockman\Public\MonsterState.h">
-      <Filter>Source\Rockman\State</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\Rockman\Public\MonsterStateComponent.h">
-      <Filter>Source\Rockman\State</Filter>
+      <Filter>Source\Rockman\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Rockman\Public\Monster_Base.h">
+      <Filter>Source\Rockman\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

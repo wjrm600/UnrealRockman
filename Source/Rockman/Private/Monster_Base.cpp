@@ -101,3 +101,13 @@ float AMonster_Base::TakeDamage(float DamageAmount, struct FDamageEvent const& D
 	}
 	return ResultDamage;
 }
+
+FString AMonster_Base::GetTestName()
+{
+	return IMyTempInterface::GetTestName();
+}
+
+void AMonster_Base::IAttack()
+{
+	GEngine->AddOnScreenDebugMessage(-1, 1, FColor::Green, FString("Interface IAttack Call!"));
+}

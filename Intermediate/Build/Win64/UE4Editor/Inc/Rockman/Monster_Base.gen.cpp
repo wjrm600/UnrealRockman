@@ -19,7 +19,15 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 	UPackage* Z_Construct_UPackage__Script_Rockman();
 	ROCKMAN_API UClass* Z_Construct_UClass_UMonsterStateComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_UAnimMontage_NoRegister();
+	ROCKMAN_API UClass* Z_Construct_UClass_UMyTempInterface_NoRegister();
 // End Cross Module References
+	DEFINE_FUNCTION(AMonster_Base::execIAttack)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->IAttack();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AMonster_Base::execMonsterAttack)
 	{
 		P_FINISH;
@@ -31,9 +39,32 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 	{
 		UClass* Class = AMonster_Base::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "IAttack", &AMonster_Base::execIAttack },
 			{ "MonsterAttack", &AMonster_Base::execMonsterAttack },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AMonster_Base_IAttack_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMonster_Base_IAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/Monster_Base.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AMonster_Base_IAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMonster_Base, nullptr, "IAttack", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020400, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AMonster_Base_IAttack_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AMonster_Base_IAttack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AMonster_Base_IAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AMonster_Base_IAttack_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AMonster_Base_MonsterAttack_Statics
 	{
@@ -86,6 +117,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 #endif
 		static const UE4CodeGen_Private::FIntPropertyParams NewProp_HP;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+		static const UE4CodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -94,6 +126,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_Rockman,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMonster_Base_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AMonster_Base_IAttack, "IAttack" }, // 524116017
 		{ &Z_Construct_UFunction_AMonster_Base_MonsterAttack, "MonsterAttack" }, // 3568602519
 	};
 #if WITH_METADATA
@@ -139,6 +172,9 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_IsAttackMontage,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMonster_Base_Statics::NewProp_HP,
 	};
+		const UE4CodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AMonster_Base_Statics::InterfaceParams[] = {
+			{ Z_Construct_UClass_UMyTempInterface_NoRegister, (int32)VTABLE_OFFSET(AMonster_Base, IMyTempInterface), false },
+		};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMonster_Base_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMonster_Base>::IsAbstract,
 	};
@@ -149,11 +185,11 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		DependentSingletons,
 		FuncInfo,
 		Z_Construct_UClass_AMonster_Base_Statics::PropPointers,
-		nullptr,
+		InterfaceParams,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
 		UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Base_Statics::PropPointers),
-		0,
+		UE_ARRAY_COUNT(InterfaceParams),
 		0x009000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_AMonster_Base_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_AMonster_Base_Statics::Class_MetaDataParams))
 	};
@@ -166,7 +202,7 @@ void EmptyLinkFunctionForGeneratedCodeMonster_Base() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AMonster_Base, 3264010289);
+	IMPLEMENT_CLASS(AMonster_Base, 2446616400);
 	template<> ROCKMAN_API UClass* StaticClass<AMonster_Base>()
 	{
 		return AMonster_Base::StaticClass();

@@ -15,6 +15,8 @@ class ARockmanGameMode : public AGameModeBase
 
 public:
 	ARockmanGameMode();
+
+	virtual void BeginPlay() override;
 };
 
 

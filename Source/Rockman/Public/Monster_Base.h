@@ -4,12 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Rockman/MyTempInterface.h"
 #include "Monster_Base.generated.h"
 
 class UMonsterStateComponent;
 
 UCLASS()
-class ROCKMAN_API AMonster_Base : public ACharacter
+class ROCKMAN_API AMonster_Base : public ACharacter, public IMyTempInterface
 {
 	GENERATED_BODY()
 
@@ -42,4 +43,9 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	virtual float TakeDamage(float DamageAmount, struct FDamageEvent const& DamageEvent, class AController* EventInstigator, AActor* DamageCauser) override;
+
+	virtual FString GetTestName() override;
+
+	UFUNCTION(BlueprintCallable)
+	virtual void IAttack() override;
 };

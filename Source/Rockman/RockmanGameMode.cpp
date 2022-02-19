@@ -13,3 +13,10 @@ ARockmanGameMode::ARockmanGameMode()
 		DefaultPawnClass = PlayerPawnBPClass.Class;
 	}
 }
+
+void ARockmanGameMode::BeginPlay()
+{
+	Super::BeginPlay();
+
+
+}
